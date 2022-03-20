@@ -78,4 +78,4 @@ def getAirdrops():
 
 
     
-backend.run()
+backend.run(host="0.0.0.0")
