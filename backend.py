@@ -1,5 +1,3 @@
-import json
-from flask import Flask, jsonify, request
 import requests as rq
 backend = Flask(__name__)
 
@@ -77,5 +75,5 @@ def getAirdrops():
     return jsonify(data)
 
 
-    
-backend.run()
+if __name__ == "__main__":
+	backend.run(host='0.0.0.0')
